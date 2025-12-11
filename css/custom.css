@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: var(--primary-80);
   /* Add your custom heading styles here */
+  font-family: "Gajraj One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 h1 { 
@@ -143,7 +147,10 @@ a.button {
 }
 
 a.button:hover {
-  background: var(--dark)
+  background: var(--dark);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 300ms ease;
 }
 
 /* Example: Secondary Button Style */
@@ -201,6 +208,17 @@ header nav a.active {
 
 #heromage-i {
   background: url('../img/About5.png') no-repeat center center/cover;
+  height: 95vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing8x3);
+}
+
+#hero666 {
+  background: url('../img/192893712.png') no-repeat center center/cover;
   height: 95vh;
   margin: 0;
   display: flex;
@@ -413,4 +431,20 @@ hr {
   color: var(--primary-25);
   font-style: normal;
   font-weight: 500;
+}
+
+/* ==========================================================================
+   DROPDOWN MENU CUSTOMIZATION
+   ========================================================================== */
+
+/* Override dropdown menu styling - remove rounded corners, add pink border */
+.desktop-nav nav .dropdown-menu {
+  border-radius: 0 !important;
+  border: 1px solid #ff69b4 !important;
+}
+
+/* 3D hover effect for dropdown items */
+.desktop-nav nav .dropdown-menu a:hover {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), inset 0 -2px 4px rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
 }
